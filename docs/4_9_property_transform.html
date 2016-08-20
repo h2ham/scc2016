@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS3 PROPERTY DEMO：transform | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">CSS3 PROPERTY DEMO：transform</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<h2 class="active">変形（transform）</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.demo div{
+&nbsp;&nbsp;&nbsp;&nbsp;transform: rotate(10deg);
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transform: rotate(10deg);
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-transform: rotate(10deg);
+&nbsp;&nbsp;&nbsp;&nbsp;/*transform:rotate(deg)	回転
+&nbsp;&nbsp;&nbsp;&nbsp;transform:scale(xy[x,y])	拡大・縮小
+&nbsp;&nbsp;&nbsp;&nbsp;transform:skew(deg)	X軸，Y軸へのゆがみ）
+&nbsp;&nbsp;&nbsp;&nbsp;transform:translate(xy[x,y])	移動*/
+&nbsp;&nbsp;&nbsp;&nbsp;/*transform-origin: 0 0;　基準位置*/
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo" style="height: 400px;">
+<div style="width: 500px; height: 200px; background-color: #06F;margin: 100px auto;"></div>
+</div>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

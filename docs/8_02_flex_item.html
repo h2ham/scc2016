@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexible Box Layout item properties 02 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">Flexible Box Layout item properties 02</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<style id="sampleStyle">
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-item {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #25B7C0;
+  transition: .3s;
+  text-align: center;
+}
+.flex-item:first-child {
+  flex-grow: 1;
+}
+.flex-item:nth-child(2) {
+  flex-grow: 2;
+}
+.flex-item:nth-child(3) {
+  flex-grow: 3;
+}
+.flex-item:nth-child(4) {
+  flex-grow: 1;
+}
+.flex-item:last-child {
+  flex-flow: 1;
+}
+.flex-item a {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 3rem;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transition: .3s ease;
+}
+.flex-item a:hover {
+  transform: rotateY( 180deg );
+}
+.flex-item span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  backface-visibility: hidden;
+}
+.flex-item span:first-of-type {
+  background-color: #fff;
+}
+.flex-item span:last-of-type {
+  color: #fff;
+  background-color: #00717A;
+  transform: rotateY( 180deg );
+}
+</style>
+
+<h2 class="active">Flexible Box Layout item properties 02</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">Example</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+  <div class="flex mheight">
+    <div class="flex-item"><a href="#"><span>01</span><span>01</span></a></div>
+    <div class="flex-item"><a href="#"><span>02</span><span>02</span></a></div>
+    <div class="flex-item"><a href="#"><span>03</span><span>03</span></a></div>
+    <div class="flex-item"><a href="#"><span>04</span><span>04</span></a></div>
+    <div class="flex-item"><a href="#"><span>05</span><span>05</span></a></div>
+  </div>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

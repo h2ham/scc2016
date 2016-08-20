@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>effects 05 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">effects 05</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      <style id="sampleStyle">
+.animation {
+  text-align: center;
+  display: block;
+  font-size: 20em;
+  line-height: 1;
+  margin: auto;
+}
+.animation i:nth-child(2) {
+  opacity: 0;
+}
+.move .animation i:nth-child(2) {
+  animation-duration: .75s;
+  animation-fill-mode: both;
+  animation-delay: 0;
+  animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+</style>
+
+<h2 class="active">effects 05</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="animation">
+  <i class="fa fa-user js-button"></i>
+  <i class="fa fa-commenting-o"></i>
+</div>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

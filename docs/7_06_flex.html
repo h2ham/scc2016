@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexible Box Layout 06 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">Flexible Box Layout 06</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<style id="sampleStyle">
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-start flex-end center space-around space-between */
+}
+.flex-item {
+  display: block;
+  margin: 10px;
+  background-color: #25B7C0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px #25B7C0;
+  transition: .3s;
+}
+.flex-item a {
+  display: block;
+  border-radius: 3px;
+  height: 100%;
+  padding: 0 8px;
+}
+.flex-item a:hover {
+  background-color: #fff;
+}
+</style>
+
+<h2 class="active">Flexible Box Layout 06</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">Example</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+  <div class="flex mheight">
+    <div class="flex-item"><a href="#">リンクテキスト01</a></div>
+    <div class="flex-item"><a href="#">リンクテキスト02</a></div>
+    <div class="flex-item"><a href="#">リンクテキスト03</a></div>
+    <div class="flex-item"><a href="#">リンクテキスト04</a></div>
+    <div class="flex-item"><a href="#">リンクテキスト05</a></div>
+  </div>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

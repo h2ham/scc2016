@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS3 SELECTORS DEMO：E:target | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">CSS3 SELECTORS DEMO：E:target</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<h2 class="active">E:target</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.demo :target{
+&nbsp;&nbsp;&nbsp;&nbsp;color:#ffffff;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color:#ff0000;
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<p class="mb30">ダミーテキスト<a href="#test01" class="tBorder">#test01</a>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<a href="#test02" class="tBorder">#test02</a>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<a href="#test03" class="tBorder">#test03</a>ダミーテキスト<a href="#test04" class="tBorder">#test04</a>ダミーテキスト<a href="#test05" class="tBorder">#test05</a>ダミーテキストダミーテキストダミーテキスト</p>
+<ul>
+<li id="test01" class="inline">#test01</li>
+<li id="test02" class="inline">#test02</li>
+<li id="test03" class="inline">#test03</li>
+<li id="test04" class="inline">#test04</li>
+<li id="test05" class="inline">#test05</li>
+</ul>
+</div>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

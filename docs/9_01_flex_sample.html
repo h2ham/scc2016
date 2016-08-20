@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexible Box Layout Sample 01 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">Flexible Box Layout Sample 01</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<style id="sampleStyle">
+.demo-header, .demo-footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: #999;
+}
+.demo-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.demo-main {
+  flex: 3 1 60%;
+  background-color: #25B7C0;
+  min-height: 200px;
+  color: #fff;
+  order: 2;
+}
+.demo-side-nav {
+  flex: 1 6 20%;
+  background: #00717A;
+  min-height: 100px;
+  color: #fff;
+  order: 1;
+}
+.demo-aside {
+  flex: 1 6 20%;
+  background: #E6EAE6;
+  order: 3;
+}
+@media all and (max-width: 47.9375em) {
+  .demo-container {
+    flex-direction: column;
+  }
+  .demo-main, .demo-side-nav, .demo-aside {
+    order: 0;
+  }
+}
+</style>
+
+<h2 class="active">Flexible Box Layout Sample 01</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">Example</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<header class="demo-header">header</header>
+<div class="demo-container">
+  <main class="demo-main">main</main>
+  <nav class="demo-side-nav">side-nav</nav>
+  <aside class="demo-aside">aside</aside>
+</div>
+<footer class="demo-footer">footer</footer>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

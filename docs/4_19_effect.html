@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>effects 08 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">effects 08</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<style id="sampleStyle">
+.demo input {
+  display: none;
+}
+label {
+  display: none;
+  font-size: 3em;
+}
+.mod-nav > li {
+  float: left;
+  text-align: center;
+  background-color: #f0f0f0;
+  position: relative;
+}
+.mod-nav > li > a {
+  display: block;
+  width: 162px;
+  padding: 10px 0;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: solid 1px #3498db;
+  transition: .5s;
+}
+.mod-nav > li > a:hover {
+  background-color: #fff;
+  color: #3498db;
+}
+.mod-nav > li:hover > .mod-nav__sub {
+  opacity: 1;
+}
+.mod-nav__sub {
+  margin: 0 !important;
+  width: 162px;
+  opacity: 0;
+  transition: .5s;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+}
+.mod-nav__sub a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #3498db;
+  transition: .5s;
+}
+.mod-nav__sub a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+@media all and (max-width: 47.9375em) {
+  label {
+    display: block;
+  }
+  .mod-nav {
+    display: none;
+  }
+  .mod-nav > li {
+    width: 162px;
+    float: none;
+  }
+  .mod-nav__sub {
+    display: none;
+    top: 0;
+    left: 162px;
+  }
+  .mod-nav > li:hover > .mod-nav__sub {
+    display: block;
+  }
+  #demo_input:checked + .mod-nav {
+    display: block;
+  }
+}
+</style>
+
+<h2 class="active">effects 08</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo mheight">
+<label for="demo_input"><i class="fa fa-navicon"></i></label>
+<input type="checkbox" id="demo_input">
+<ul class="mod-nav">
+  <li><a href="#">メニュー１</a>
+    <ul class="mod-nav__sub">
+      <li><a href="#">サブメニュー１−１</a></li>
+      <li><a href="#">サブメニュー１−２</a></li>
+      <li><a href="#">サブメニュー１−３</a></li>
+    </ul>
+  </li>
+  <li><a href="#">メニュー２</a>
+    <ul class="mod-nav__sub">
+      <li><a href="#">サブメニュー２−１</a></li>
+      <li><a href="#">サブメニュー２−２</a></li>
+      <li><a href="#">サブメニュー２−３</a></li>
+    </ul>
+  </li>
+  <li><a href="#">メニュー３</a>
+    <ul class="mod-nav__sub">
+      <li><a href="#">サブメニュー３−１</a></li>
+      <li><a href="#">サブメニュー３−２</a></li>
+      <li><a href="#">サブメニュー３−３</a></li>
+    </ul>
+  </li>
+  <li><a href="#">メニュー４</a>
+    <ul class="mod-nav__sub">
+      <li><a href="#">サブメニュー４−１</a></li>
+      <li><a href="#">サブメニュー４−２</a></li>
+      <li><a href="#">サブメニュー４−３</a></li>
+    </ul>
+  </li>
+  <li><a href="#">メニュー５</a>
+    <ul class="mod-nav__sub">
+      <li><a href="#">サブメニュー５−１</a></li>
+      <li><a href="#">サブメニュー５−２</a></li>
+      <li><a href="#">サブメニュー５−３</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>effects 02 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">effects 02</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<style id="sampleStyle">
+.button {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px;
+}
+.button button {
+  border: none;
+  border-radius: 3px;
+  background-color: #868393;
+  padding: 5px 20px;
+  color: #fff;
+  outline: none;
+}
+.button button:hover {
+  background-color: #07397a;
+}
+.button button:active {
+  background-color: #f36158;
+}
+.movedemo {
+  font-size: 5em;
+}
+.movedemo li span {
+  display: block;
+}
+.move .movedemo li span {
+  -webkit-transform: translate(90%, 0);
+  transform: translate(90%, 0);
+}
+.movedemo li i {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.movedemo li:nth-child(1) { color: #f36158; }
+.movedemo li:nth-child(2) { color: #7f96c6; }
+.movedemo li:nth-child(3) { color: #89d6d6; }
+.movedemo li:nth-child(4) { color: #d22d2e; }
+.movedemo li:nth-child(5) { color: #62c540; }
+.movedemo li:nth-child(6) { color: #a17d57; }
+
+.duration li:nth-child(1) span { transition: 1s; }
+.duration li:nth-child(2) span { transition: 2s; }
+.duration li:nth-child(3) span { transition: 3s; }
+.duration li:nth-child(4) span { transition: 4s; }
+.duration li:nth-child(5) span { transition: 5s; }
+.duration li:nth-child(6) span { transition: 6s; }
+</style>
+
+<h2 class="active">effects 02</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="button">
+  <button>MOVE</button>
+</div>
+<div class="movedemo duration">
+  <ul>
+    <li><span><i class="fa fa-plane"></span></i></li>
+    <li><span><i class="fa fa-plane"></span></i></li>
+    <li><span><i class="fa fa-plane"></span></i></li>
+    <li><span><i class="fa fa-plane"></span></i></li>
+    <li><span><i class="fa fa-plane"></span></i></li>
+    <li><span><i class="fa fa-plane"></span></i></li>
+  </ul>
+</div>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexible Box Layout Sample 02 | サッポロクリエイティブキャンプ2016</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="/common/css/style.css">
+
+
+</head>
+<body>
+<div class="layout-wrap">
+  <header class="layout-header">
+    <div class="layout-inner">
+      <h1 class="page-title">Flexible Box Layout Sample 02</h1>
+      
+      <ul class="utility-nav">
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div><!-- /.layout-inner -->
+  </header>
+
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      
+<style id="sampleStyle">
+.entry {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.entry__item {
+  box-sizing: border-box;
+  border: solid 3px #999;
+  border-radius: 3px;
+  width: 30%;
+  margin-bottom: 30px;
+}
+.entry .entry__title {
+  border: 0;
+  margin: 0;
+}
+.entry__summary > p {
+  margin: 0;
+  padding: 0 10px 10px;
+}
+</style>
+
+<h2 class="active">Flexible Box Layout Sample 02</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">Example</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="entry">
+  <article class="entry__item">
+    <div class="entry__image"><img src="http://placehold.it/400x300" alt=""></div>
+    <h2 class="entry__title">ダミータイトル</h2>
+    <div class="entry__summary">
+      <p>サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
+    </div>
+  </article>
+  <article class="entry__item">
+    <div class="entry__image"><img src="http://placehold.it/400x300/25B7C0/ffffff" alt=""></div>
+    <h2 class="entry__title">ダミータイトル</h2>
+    <div class="entry__summary">
+      <p>サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
+    </div>
+  </article>
+  <article class="entry__item">
+    <div class="entry__image"><img src="http://placehold.it/400x300/002124/ffffff" alt=""></div>
+    <h2 class="entry__title">ダミータイトル</h2>
+    <div class="entry__summary">
+      <p>サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
+    </div>
+  </article>
+</div>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+  <footer class="layout-footer">
+    <div class="layout-inner">
+      <p><small>&copy; 2016 <a href="https://ham.works/" target="_blank">HAMWORKS Co., Ltd.</a></small> <span>(´ ºムº `)</span></p>
+    </div><!-- /.layout-inner -->
+  </footer>
+
+</div><!-- /.layout-wrap -->
+<script src="/common/js/vendor/jquery-3.1.0.slim.min.js"></script>
+<script src="/common/js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/common/js/vendor/jquery.easing.1.3.js"></script>
+<script src="/common/js/functions.js"></script>
+
+</body>
+</html>
